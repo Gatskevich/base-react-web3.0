@@ -8,6 +8,7 @@
     "build": "tsc && vite build",
     "style:all": "tsc && npm run style:lint && npm run style:prettier",
     "style:lint": "eslint '**/*.{js,jsx,ts,tsx}'",
+    "style:prettier": "prettier --check '**/*.{js,jsx,ts,tsx}'",
     "preview": "vite preview",
     "prepare": "husky install"
   },
