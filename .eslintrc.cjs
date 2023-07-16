@@ -11,10 +11,11 @@ module.exports = {
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: true,
-    tsconfigRootDir: __dirname,
+    project: "./tsconfig.json",
+    ecmaVersion: 2022, 
+    ecmaFeatures: {
+      jsx: true 
+    }
   },
   plugins: ['react-refresh'],
   rules: {
@@ -24,4 +25,5 @@ module.exports = {
     ],
     '@typescript-eslint/no-non-null-assertion': 'off',
   },
+  ignorePatterns: [".eslintrc.cjs", "vite.config.ts"]
 }
