@@ -13,10 +13,10 @@ interface IInput {
 const Input = ({ placeholder, name, type, value }: IInput) => (
   <input
     placeholder={placeholder}
+    name={name}
     type={type}
     step="0.0001"
     value={value}
-    onChange={(e) => {}}
     className="my-2 w-full rounded-sm p-2 outline-none bg-transparent text-white border-none text-sm white-glassmorphism"
   />
 );
@@ -76,7 +76,6 @@ export const Welcome = () => {
             <div className="h-[1px] w-full bg-gray-400 my-2" />
                 <button
                     type="button"
-                    onClick={() => {}}
                     className="text-white w-full mt-2 border-[1px] p-2 border-[#3d4f7c] hover:bg-[#3d4f7c] rounded-full cursor-pointer"
                 >
                     Send now
