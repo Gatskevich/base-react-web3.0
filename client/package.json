@@ -10,7 +10,7 @@
     "style:lint": "eslint '**/*.{js,jsx,ts,tsx}'",
     "style:prettier": "prettier --check '**/*.{js,jsx,ts,tsx}'",
     "make-pretty": "prettier --write '**/*.{js,jsx,ts,tsx}'",
-    "preview": "vite preview",
+    "preview": "vite preview"
   },
   "dependencies": {
     "autoprefixer": "^10.4.14",
